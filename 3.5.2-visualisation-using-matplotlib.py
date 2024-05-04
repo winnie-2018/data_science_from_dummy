@@ -11,3 +11,5 @@ ax.plot(df['dom'], df['ent'])
 
 # Save this PNG in figures folder
 fig.savefig("figures/dom vs ent.png")
+
+# haha
