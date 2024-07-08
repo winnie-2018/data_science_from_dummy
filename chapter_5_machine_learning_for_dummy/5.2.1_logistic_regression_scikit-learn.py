@@ -24,17 +24,17 @@ new_lr_Object.max_iter= 500
 print(new_lr_Object)
 
 import pandas as pd
-df = pd.read_csv('../datasets/creditcard_50k.csv')
+df = pd.read_csv('../datasets/clean_creditcard.csv')
 
-X = df[0:700].values
-y = df['Class_Category'][0:700].values
-new_lr_Object.fit(X, y)
+# X = df[0:700].values
+# y = df['Class_Category'][0:700].values
+# new_lr_Object.fit(X, y)
 
-new_X = df[700:715].values
-print(new_X)
+# new_X = df[700:715].values
+# print(new_X)
 
-y_pred = new_lr_Object.predict(new_X)
-print(f'Predicted values: {y_pred}')
+# y_pred = new_lr_Object.predict(new_X)
+# print(f'Predicted values: {y_pred}')
 
-y_test= df['Class_Category'][700:715].values
-print(f'Actual values: {y_test}')
+# y_test= df['Class_Category'][700:715].values
+# print(f'Actual values: {y_test}')
